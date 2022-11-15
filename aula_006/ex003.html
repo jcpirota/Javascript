@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira aula</title>
+    <style>
+        body {
+            background-color:blueviolet; /*Comentário em css*/
+            color: white;
+            font: normal;
+            font-size: 14;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Olá, mundo!
+    </h1>
+    <h2>
+        Seja bem vindo {nome}!
+    </h2>
+    <p>Testando a implementação do site</p> <!--Comentário em HTML -->
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número')) // é necessário converter a inserção do prompt para número para fazer o cálculo. Demonstrado aqui 3 formas.
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        var n3 = Number(window.prompt('Digite mais um numero'))
+        var s = n1 + n2 + n3
+        window.alert('A soma dos dois números é igual a ' + String(s) + ' e ' + s.toString())
+        window.alert(`Uma forma de escrever concatenando com variáveis é assim ${s}`) //Precisa usar apóstofos para funcionar templates strings. Aspas simples não funcionam.
+    </script>
+</body>
+</html>
